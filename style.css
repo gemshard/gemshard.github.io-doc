@@ -1,0 +1,179 @@
+@font-face{
+    font-family: Ubuntu;
+    src: url(Ubuntu/Ubuntu-Regular.ttf);
+}
+body{
+    margin:0;
+    font-family: Ubuntu;
+    font-size: 15px;
+    color:white;
+}
+span{
+    color: #cc0000;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: #e31937;
+}
+header{
+    height: 50px;
+}
+#header_waller{
+    width: 1000px;
+    height: 50px;
+    margin: -100px auto;
+    background: url(media/bg_header_waller.png);
+    background-size: 50px 100%;
+    border-radius: 0 0 5px 5px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+/* logo */
+#logo{
+    position: absolute;
+    top: -50px;
+    left:50%;
+    margin-left: -50px;
+    display: block;
+    width: 100px;
+    height: 30px;
+    background: url('media/teslalogo.png') no-repeat;
+    background-size: 100px;
+    transition-property: top;
+    transition-duration: 1s;
+}
+#logo:hover{
+    background: url('media/teslalogo_hover.png') no-repeat;
+    background-size: 100px;
+}
+#cars_bar{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 20px;
+    display: inline-block;
+}
+#cars_bar li{
+    float: left;
+    margin-left: 26px;
+}
+#info_bar{
+    float: right;
+    list-style: none;
+}
+#info_bar li{
+    float: right;
+    margin-right: 26px;
+}
+.info_bar{
+    display: none;
+}
+#footer{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -500px;
+    height: 35px;
+    width: 1000px;
+    background: url(media/bg_header_waller.png);
+    border-radius: 5px 5px 0 0;
+}
+#footer p{
+    width: 300px;
+    margin: 8px auto;
+}
+video{
+    position: fixed;
+    bottom:0;
+    right:0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -9999;
+
+}
+#hit_menu{
+    float: left;
+    margin: 15px 0 0 20px;
+    width: 22px;
+    height: 27px;
+    display: none;
+    background: url(media/hit.png) no-repeat;
+    background-size: 22px;
+}
+#hit_menu:hover{
+    background:url(media/hit_hover.png) no-repeat;
+    background-size: 22px;
+}
+@media (min-width:800px) and (max-width:1000px){
+    #header_waller{
+        width: 800px;
+    }
+    #cars_bar li{
+    margin-left: 20px;
+}
+}
+@media  (min-width: 0px) and (max-width: 800px){
+    body{
+    font-size: 16px;
+    }
+    #header_waller{
+        border-radius: 0px;
+        width: 100%;
+    }
+    #cars_bar{
+        position:absolute;
+        top:45px;
+        left: -200%;
+        line-height: 2;
+        background:  url(media/bg_cars_bar.png);
+        border: 1px solid #cc0000;
+        border-radius: 5px;
+        width: 250px;
+        padding: 0;
+        transition-property: left;
+        transition-duration: 0.2s;
+        overflow: hidden;
+    }
+    #cars_bar .index1{
+        border-top: none;
+
+    }
+    #cars_bar li{
+        margin: 0 auto;
+        float: left;
+        clear: both;
+        width: 100%;
+        border-top: 1px solid #cc0000;
+    }
+    #cars_bar li:hover{
+        background: #fff;
+    }
+ 
+    #cars_bar a{
+        color: #f20202;
+    }
+    #cars_bar a:hover{
+        color: #9f1717;
+    }
+    #hit_menu{
+        display: inline-block;
+    }
+    #info_bar{
+        display: none;
+    }
+    .info_bar{
+        display: inline;
+    }
+}
+@media (min-width: 0) and (max-width: 400px){
+    #cars_bar{
+        width: 98%;
+        left:50%;
+        margin-left: -49%;
+        padding: 0;
+    }
+}
+

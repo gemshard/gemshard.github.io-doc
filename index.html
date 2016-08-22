@@ -1,0 +1,60 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tesla Motors</title>
+         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div id='header_waller'>
+                <div id='hit_menu'> </div>
+                  <ul id='cars_bar'>
+                    <li class='index1'><a href='models.html'>Model S</a></li>
+                    <li class='index'><a href='modelx.html'>Model X</a></li>
+                    <li class='index'><a href='model3.html'>Model 3</a></li>
+                    <li class='index'><a href='model3.html'>Energy</a></li>
+                    <li class='index'><a href='models.html' class='info_bar'>Support</a></li>
+                    <li class='index_cars_bar'><a href='modelx.html' class='info_bar'>My Tesla</a></li>
+                    <li class='index_cars_bar'><a href='charging.html' class='info_bar'>Charging</a></li>
+                    <li class='index_cars_bar'><a href='model3.html' class='info_bar'>Shop</a></li>
+                </ul>
+                <a id='logo' href='index.html'></a>
+                <ul id='info_bar'>
+                    <li><a href='models.html'>Support</a></li>
+                    <li><a href='modelx.html'>My Tesla</a></li>
+                    <li><a href='charging.html'>Charging</a></li>
+                    <li><a href='model3.html'>Shop</a></li>
+                </ul>
+            </div>
+        </header>
+        <video autoplay loop id='bg_video'>
+            <source src="media/tesla_video_sx_2016.mp4" type="video/mp4">
+        </video>
+        <div id='footer'><p><span>Tesla Motors</span> &copy; 2016 by <a href='https://new.vk.com/bollydub' target='blank'>Denis Kovalev</a></p></div>
+        <script>
+            
+            setTimeout(function(){document.getElementById('header_waller').style.marginTop = '0';document.getElementById('logo').style.top = '18px';},0.5);
+    
+                 var check = 0;
+            
+                  document.getElementById('hit_menu').onclick = function(){
+                  if(check ==0){
+                  document.getElementById('cars_bar').style.left='10px';
+                  check = 1; }
+                    else{
+                    document.getElementById('cars_bar').style.left='-200%';
+                    check = 0;
+             };};
+           
+            document.getElementById('bg_video').onclick = function(){
+                if(check == 1){
+                    document.getElementById('cars_bar').style.left = '-200%';
+                }
+            }
+    
+           
+        </script>
+    </body>
+</html>
